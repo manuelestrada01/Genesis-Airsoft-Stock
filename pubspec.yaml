@@ -1,0 +1,50 @@
+name: genesis_airsoft_stock
+description: "Genesis Airsoft Stock - Gestión de inventario y finanzas"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.5.0
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Navigation
+  go_router: ^14.6.0
+
+  # UI / Utils
+  intl: ^0.19.0
+  cached_network_image: ^3.4.1
+  equatable: ^2.0.7
+  google_fonts: ^6.2.1
+  mcp_toolkit: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  mockito: ^5.4.4
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/logo_launcher.png"
+  min_sdk_android: 23
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/images/logo_launcher.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo.png
+    - assets/images/logo_launcher.png
